@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/screen/window.xsd"
+        caption="msg://browseCaption"
+        focusComponent="sectionsesTable"
+        messagesPack="com.company.statisticsprojectrc.web.screens.sections">
+    <data readOnly="true">
+        <collection id="sectionsesDc"
+                    class="com.company.statisticsprojectrc.entity.Sections"
+                    view="_local">
+            <loader id="sectionsesDl">
+                <query>
+                    <![CDATA[select e from statisticsprojectrc_Sections e]]>
+                </query>
+            </loader>
+        </collection>
+    </data>
+    <dialogMode height="600"
+                width="800"/>
+    <layout expand="sectionsesTable"
+            spacing="true">
+        <filter id="filter"
+                applyTo="sectionsesTable"
+                dataLoader="sectionsesDl">
+            <properties include=".*"/>
+        </filter>
+        <groupTable id="sectionsesTable"
+                    width="100%"
+                    dataContainer="sectionsesDc">
+            <actions>
+                <action id="create" type="create"/>
+                <action id="edit" type="edit"/>
+                <action id="remove" type="remove"/>
+            </actions>
+            <columns>
+                <column id="nameSection"/>
+            </columns>
+            <rowsCount/>
+            <buttonsPanel id="buttonsPanel"
+                          alwaysVisible="true">
+                <button id="createBtn" action="sectionsesTable.create"/>
+                <button id="editBtn" action="sectionsesTable.edit"/>
+                <button id="removeBtn" action="sectionsesTable.remove"/>
+            </buttonsPanel>
+        </groupTable>
+        <hbox id="lookupActions" spacing="true" visible="false">
+            <button action="lookupSelectAction"/>
+            <button action="lookupCancelAction"/>
+        </hbox>
+    </layout>
+</window>

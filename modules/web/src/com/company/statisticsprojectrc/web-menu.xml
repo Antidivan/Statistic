@@ -2,5 +2,9 @@
 <menu-config xmlns="http://schemas.haulmont.com/cuba/menu.xsd">
     <menu id="application-statisticsprojectrc" insertBefore="administration">
         <item screen="statisticsprojectrc_Sites.browse"/>
+        <item screen="statisticsprojectrc_Durations.browse"/>
+        <item screen="statisticsprojectrc_Projects.browse"/>
+        <item screen="statisticsprojectrc_Sections.browse"/>
+        <item screen="statisticsprojectrc_PaymentMethods.browse"/>
     </menu>
 </menu-config>
