@@ -1,0 +1,2 @@
+alter table STATISTICSPROJECTRC_PROJECT_CONSULTANT
+    drop column CONSULTANT_ID__U56785 cascade;

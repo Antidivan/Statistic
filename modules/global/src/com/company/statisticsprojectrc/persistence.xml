@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+    <persistence-unit name="Statistics_projectRC" transaction-type="RESOURCE_LOCAL">
+
+        <class>com.company.statisticsprojectrc.entity.Orders</class>
+        <class>com.company.statisticsprojectrc.entity.Locality</class>
+        <class>com.company.statisticsprojectrc.entity.Users</class>
+        <class>com.company.statisticsprojectrc.entity.Customers</class>
+        <class>com.company.statisticsprojectrc.entity.Sites</class>
+        <class>com.company.statisticsprojectrc.entity.PaymentMethods</class>
+        <class>com.company.statisticsprojectrc.entity.Projects</class>
+        <class>com.company.statisticsprojectrc.entity.Consultants</class>
+        <class>com.company.statisticsprojectrc.entity.Project_Section</class>
+        <class>com.company.statisticsprojectrc.entity.Costs</class>
+        <class>com.company.statisticsprojectrc.entity.Durations</class>
+        <class>com.company.statisticsprojectrc.entity.FormService</class>
+        <class>com.company.statisticsprojectrc.entity.Form_Duration_Cost</class>
+        <class>com.company.statisticsprojectrc.entity.Sections</class>
+        <class>com.company.statisticsprojectrc.entity.Section_Consultant</class>
+    </persistence-unit>
+</persistence>
