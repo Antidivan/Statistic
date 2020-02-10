@@ -5,7 +5,7 @@ import com.company.statisticsprojectrc.entity.Durations;
 
 @UiController("statisticsprojectrc_Durations.browse")
 @UiDescriptor("durations-browse.xml")
-@LookupComponent("durationsesTable")
+@LookupComponent("durationsTable")
 @LoadDataBeforeShow
 public class DurationsBrowse extends StandardLookup<Durations> {
 }

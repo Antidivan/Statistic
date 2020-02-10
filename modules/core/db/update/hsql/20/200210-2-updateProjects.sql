@@ -1,0 +1,2 @@
+alter table STATISTICSPROJECTRC_PROJECTS alter column DATE_START rename to DATE_START__U62836 ^
+alter table STATISTICSPROJECTRC_PROJECTS alter column DATE_START__U62836 set null ;

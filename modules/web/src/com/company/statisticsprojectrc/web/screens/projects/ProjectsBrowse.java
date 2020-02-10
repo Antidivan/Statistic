@@ -5,7 +5,7 @@ import com.company.statisticsprojectrc.entity.Projects;
 
 @UiController("statisticsprojectrc_Projects.browse")
 @UiDescriptor("projects-browse.xml")
-@LookupComponent("projectsesTable")
+@LookupComponent("projectsTable")
 @LoadDataBeforeShow
 public class ProjectsBrowse extends StandardLookup<Projects> {
 }

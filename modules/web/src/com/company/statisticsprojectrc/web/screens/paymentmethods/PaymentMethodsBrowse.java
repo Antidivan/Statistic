@@ -5,7 +5,7 @@ import com.company.statisticsprojectrc.entity.PaymentMethods;
 
 @UiController("statisticsprojectrc_PaymentMethods.browse")
 @UiDescriptor("payment-methods-browse.xml")
-@LookupComponent("paymentMethodsesTable")
+@LookupComponent("paymentMethodsTable")
 @LoadDataBeforeShow
 public class PaymentMethodsBrowse extends StandardLookup<PaymentMethods> {
 }

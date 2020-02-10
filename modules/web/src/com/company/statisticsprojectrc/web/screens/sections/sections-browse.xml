@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <window xmlns="http://schemas.haulmont.com/cuba/screen/window.xsd"
         caption="msg://browseCaption"
-        focusComponent="sectionsesTable"
+        focusComponent="sectionsTable"
         messagesPack="com.company.statisticsprojectrc.web.screens.sections">
     <data readOnly="true">
-        <collection id="sectionsesDc"
+        <collection id="sectionsDc"
                     class="com.company.statisticsprojectrc.entity.Sections"
                     view="_local">
-            <loader id="sectionsesDl">
+            <loader id="sectionsDl">
                 <query>
                     <![CDATA[select e from statisticsprojectrc_Sections e]]>
                 </query>
@@ -16,16 +16,16 @@
     </data>
     <dialogMode height="600"
                 width="800"/>
-    <layout expand="sectionsesTable"
+    <layout expand="sectionsTable"
             spacing="true">
         <filter id="filter"
-                applyTo="sectionsesTable"
+                applyTo="sectionsTable"
                 dataLoader="sectionsesDl">
             <properties include=".*"/>
         </filter>
-        <groupTable id="sectionsesTable"
+        <groupTable id="sectionsTable"
                     width="100%"
-                    dataContainer="sectionsesDc">
+                    dataContainer="sectionsDc">
             <actions>
                 <action id="create" type="create"/>
                 <action id="edit" type="edit"/>
@@ -37,9 +37,9 @@
             <rowsCount/>
             <buttonsPanel id="buttonsPanel"
                           alwaysVisible="true">
-                <button id="createBtn" action="sectionsesTable.create"/>
-                <button id="editBtn" action="sectionsesTable.edit"/>
-                <button id="removeBtn" action="sectionsesTable.remove"/>
+                <button id="createBtn" action="sectionsTable.create"/>
+                <button id="editBtn" action="sectionsTable.edit"/>
+                <button id="removeBtn" action="sectionsTable.remove"/>
             </buttonsPanel>
         </groupTable>
         <hbox id="lookupActions" spacing="true" visible="false">

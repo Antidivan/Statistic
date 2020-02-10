@@ -10,7 +10,6 @@
         <class>com.company.statisticsprojectrc.entity.PaymentMethods</class>
         <class>com.company.statisticsprojectrc.entity.Projects</class>
         <class>com.company.statisticsprojectrc.entity.Consultants</class>
-        <class>com.company.statisticsprojectrc.entity.Project_Section</class>
         <class>com.company.statisticsprojectrc.entity.Costs</class>
         <class>com.company.statisticsprojectrc.entity.Durations</class>
         <class>com.company.statisticsprojectrc.entity.FormService</class>

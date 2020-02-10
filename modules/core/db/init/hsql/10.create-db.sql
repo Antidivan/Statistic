@@ -56,34 +56,34 @@ create table STATISTICSPROJECTRC_PAYMENT_METHODS
 ) ^
 -- end STATISTICSPROJECTRC_PAYMENT_METHODS
 -- begin STATISTICSPROJECTRC_ORDERS
-create table STATISTICSPROJECTRC_ORDERS
-(
-    ID                varchar(36)      not null,
-    VERSION           integer          not null,
-    CREATE_TS         timestamp,
-    CREATED_BY        varchar(50),
-    UPDATE_TS         timestamp,
-    UPDATED_BY        varchar(50),
-    DELETE_TS         timestamp,
-    DELETED_BY        varchar(50),
+create table STATISTICSPROJECTRC_ORDERS (
+    ID varchar(36) not null,
+    VERSION integer not null,
+    CREATE_TS timestamp,
+    CREATED_BY varchar(50),
+    UPDATE_TS timestamp,
+    UPDATED_BY varchar(50),
+    DELETE_TS timestamp,
+    DELETED_BY varchar(50),
     --
-    SITE_ORDER_ID     varchar(36)      not null,
-    NUMBER_ORDER      varchar(255)     not null,
-    DATE_CREATE       timestamp        not null,
-    DATE_SALE         timestamp,
-    PAYMENT_METHOD_ID varchar(36)      not null,
-    COST_FINAL        double precision not null,
-    COST_ORDER        double precision not null,
-    PAID              boolean          not null,
-    CANCELED          boolean          not null,
-    PRODUCT_ID        varchar(36)      not null,
-    CONSULTANT_ID     varchar(36)      not null,
-    customer_ID       varchar(36)      not null,
-    DATE_ESTIMATED    date,
-    TOWN_ID           varchar(36)      not null,
+    SITE_ORDER_ID varchar(36) not null,
+    NUMBER_ORDER varchar(255) not null,
+    DATE_CREATE timestamp not null,
+    DATE_SALE timestamp,
+    PAYMENT_METHOD_ID varchar(36) not null,
+    COST_FINAL double precision not null,
+    COST_ORDER double precision not null,
+    PAID boolean not null,
+    CANCELED boolean not null,
+    SECTION_ID varchar(36) not null,
+    PRODUCT_ID varchar(36) not null,
+    CONSULTANT_ID varchar(36) not null,
+    customer_ID varchar(36) not null,
+    DATE_ESTIMATED date,
+    TOWN_ID varchar(36) not null,
     --
     primary key (ID)
-) ^
+)^
 -- end STATISTICSPROJECTRC_ORDERS
 -- begin STATISTICSPROJECTRC_TOWNS
 create table STATISTICSPROJECTRC_TOWNS
@@ -144,40 +144,22 @@ create table STATISTICSPROJECTRC_CONSULTANTS
 ) ^
 -- end STATISTICSPROJECTRC_CONSULTANTS
 -- begin STATISTICSPROJECTRC_PROJECTS
-create table STATISTICSPROJECTRC_PROJECTS
-(
-    ID           varchar(36)  not null,
-    VERSION      integer      not null,
-    CREATE_TS    timestamp,
-    CREATED_BY   varchar(50),
-    UPDATE_TS    timestamp,
-    UPDATED_BY   varchar(50),
-    DELETE_TS    timestamp,
-    DELETED_BY   varchar(50),
-    --
-    NAME_PROJECT varchar(255) not null,
-    DATE_START   date         not null,
-    --
-    primary key (ID)
-) ^
--- end STATISTICSPROJECTRC_PROJECTS
--- begin STATISTICSPROJECTRC_PROJECT_CONSULTANT
-create table STATISTICSPROJECTRC_PROJECT_CONSULTANT
-(
-    ID         varchar(36) not null,
-    VERSION    integer     not null,
-    CREATE_TS  timestamp,
+create table STATISTICSPROJECTRC_PROJECTS (
+    ID varchar(36) not null,
+    VERSION integer not null,
+    CREATE_TS timestamp,
     CREATED_BY varchar(50),
-    UPDATE_TS  timestamp,
+    UPDATE_TS timestamp,
     UPDATED_BY varchar(50),
-    DELETE_TS  timestamp,
+    DELETE_TS timestamp,
     DELETED_BY varchar(50),
     --
-    PROJECT_ID varchar(36) not null,
+    NAME_PROJECT varchar(255) not null,
     --
     primary key (ID)
-) ^
--- end STATISTICSPROJECTRC_PROJECT_CONSULTANT
+)^
+-- end STATISTICSPROJECTRC_PROJECTS
+
 -- begin STATISTICSPROJECTRC_COSTS
 create table STATISTICSPROJECTRC_COSTS
 (
@@ -250,21 +232,21 @@ create table STATISTICSPROJECTRC_FORMSERVICE
 ) ^
 -- end STATISTICSPROJECTRC_FORMSERVICE
 -- begin STATISTICSPROJECTRC_SECTIONS
-create table STATISTICSPROJECTRC_SECTIONS
-(
-    ID           varchar(36)  not null,
-    VERSION      integer      not null,
-    CREATE_TS    timestamp,
-    CREATED_BY   varchar(50),
-    UPDATE_TS    timestamp,
-    UPDATED_BY   varchar(50),
-    DELETE_TS    timestamp,
-    DELETED_BY   varchar(50),
+create table STATISTICSPROJECTRC_SECTIONS (
+    ID varchar(36) not null,
+    VERSION integer not null,
+    CREATE_TS timestamp,
+    CREATED_BY varchar(50),
+    UPDATE_TS timestamp,
+    UPDATED_BY varchar(50),
+    DELETE_TS timestamp,
+    DELETED_BY varchar(50),
     --
     NAME_SECTION varchar(255) not null,
+    DATE_START date not null,
     --
     primary key (ID)
-) ^
+)^
 -- end STATISTICSPROJECTRC_SECTIONS
 -- begin STATISTICSPROJECTRC_SECTION_CONSULTANT
 create table STATISTICSPROJECTRC_SECTION_CONSULTANT

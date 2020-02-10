@@ -1,5 +1,6 @@
 package com.company.statisticsprojectrc.entity;
 
+import com.haulmont.chile.core.annotations.NamePattern;
 import com.haulmont.cuba.core.entity.StandardEntity;
 import com.haulmont.cuba.core.entity.annotation.Lookup;
 import com.haulmont.cuba.core.entity.annotation.LookupType;
@@ -7,6 +8,7 @@ import com.haulmont.cuba.core.entity.annotation.LookupType;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 
+@NamePattern("Product")
 @Table(name = "STATISTICSPROJECTRC_FORM_DURATION_COST")
 @Entity(name = "statisticsprojectrc_Form_Duration_Cost")
 public class Form_Duration_Cost extends StandardEntity {
