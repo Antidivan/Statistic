@@ -5,7 +5,7 @@
         messagesPack="com.company.statisticsprojectrc.web.screens.durations">
     <data>
         <instance id="durationsDc"
-                  class="com.company.statisticsprojectrc.entity.Durations"
+                  class="Duration"
                   view="_local">
             <loader/>
         </instance>

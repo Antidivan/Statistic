@@ -16,13 +16,13 @@ public class Section_Consultant extends StandardEntity {
     @NotNull
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "SECTION_ID")
-    protected Sections section;
+    protected Section section;
 
     @Lookup(type = LookupType.DROPDOWN, actions = {"lookup"})
     @NotNull
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "CONSULTANT_ID")
-    protected Consultants consultant;
+    protected Consultant consultant;
 
     @NotNull
     @Column(name = "GRADUATION", nullable = false)
@@ -36,19 +36,19 @@ public class Section_Consultant extends StandardEntity {
         this.graduation = graduation;
     }
 
-    public Consultants getConsultant() {
+    public Consultant getConsultant() {
         return consultant;
     }
 
-    public void setConsultant(Consultants consultant) {
+    public void setConsultant(Consultant consultant) {
         this.consultant = consultant;
     }
 
-    public Sections getSection() {
+    public Section getSection() {
         return section;
     }
 
-    public void setSection(Sections section) {
+    public void setSection(Section section) {
         this.section = section;
     }
 }

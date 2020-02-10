@@ -5,7 +5,7 @@
         messagesPack="com.company.statisticsprojectrc.web.screens.sites">
     <data readOnly="true">
         <collection id="sitesesDc"
-                    class="com.company.statisticsprojectrc.entity.Sites"
+                    class="WSite"
                     view="_local">
             <loader id="sitesesDl">
                 <query>

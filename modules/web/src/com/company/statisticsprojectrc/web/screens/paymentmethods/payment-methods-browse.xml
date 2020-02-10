@@ -5,7 +5,7 @@
         messagesPack="com.company.statisticsprojectrc.web.screens.paymentmethods">
     <data readOnly="true">
         <collection id="paymentMethodsesDc"
-                    class="com.company.statisticsprojectrc.entity.PaymentMethods"
+                    class="PaymentMethod"
                     view="_local">
             <loader id="paymentMethodsesDl">
                 <query>

@@ -1,11 +1,11 @@
 package com.company.statisticsprojectrc.web.screens.paymentmethods;
 
 import com.haulmont.cuba.gui.screen.*;
-import com.company.statisticsprojectrc.entity.PaymentMethods;
+import com.company.statisticsprojectrc.entity.PaymentMethod;
 
 @UiController("statisticsprojectrc_PaymentMethods.browse")
 @UiDescriptor("payment-methods-browse.xml")
 @LookupComponent("paymentMethodsTable")
 @LoadDataBeforeShow
-public class PaymentMethodsBrowse extends StandardLookup<PaymentMethods> {
+public class PaymentMethodsBrowse extends StandardLookup<PaymentMethod> {
 }

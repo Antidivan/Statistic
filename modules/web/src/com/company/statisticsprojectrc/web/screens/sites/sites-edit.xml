@@ -5,7 +5,7 @@
         messagesPack="com.company.statisticsprojectrc.web.screens.sites">
     <data>
         <instance id="sitesDc"
-                  class="com.company.statisticsprojectrc.entity.Sites"
+                  class="WSite"
                   view="_local">
             <loader/>
         </instance>
