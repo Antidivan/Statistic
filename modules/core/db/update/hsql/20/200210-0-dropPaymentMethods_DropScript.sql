@@ -1,1 +1,0 @@
-drop table STATISTICSPROJECTRC_PAYMENT_METHODS__U16427 if exists cascade ;
