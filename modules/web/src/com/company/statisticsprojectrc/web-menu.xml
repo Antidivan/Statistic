@@ -3,5 +3,11 @@
     <menu id="application-statisticsprojectrc" insertBefore="administration">
 
         <item screen="statisticsprojectrc_Cost.browse"/>
+        <item screen="statisticsprojectrc_Duration.browse"/>
+        <item screen="statisticsprojectrc_PaymentMethod.browse"/>
+        <item screen="statisticsprojectrc_Project.browse"/>
+        <item screen="statisticsprojectrc_WSite.browse"/>
+        <item screen="statisticsprojectrc_USER.browse"/>
+        <item screen="statisticsprojectrc_Consultant.browse"/>
     </menu>
 </menu-config>

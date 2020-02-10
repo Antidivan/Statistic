@@ -126,7 +126,7 @@ create table STATISTICSPROJECTRC_LOCALITY (
     DELETE_TS timestamp,
     DELETED_BY varchar(50),
     --
-    LOCALITY varchar(255) not null,
+    TOWN varchar(255) not null,
     COUNTRY varchar(255),
     --
     primary key (ID)

@@ -15,7 +15,7 @@ public class Locality extends StandardEntity {
     private static final long serialVersionUID = 8193271901033764487L;
 
     @NotNull
-    @Column(name = "LOCALITY", nullable = false)
+    @Column(name = "TOWN", nullable = false)
     protected String town;
 
     @Column(name = "COUNTRY")
