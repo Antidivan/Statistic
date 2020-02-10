@@ -7,8 +7,8 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 import java.util.Date;
 
-@Table(name = "STATISTICSPROJECTRC_SECTIONS")
-@Entity(name = "statisticsprojectrc_Sections")
+@Table(name = "STATISTICSPROJECTRC_SECTION")
+@Entity(name = "statisticsprojectrc_Section")
 public class Section extends StandardEntity {
     private static final long serialVersionUID = -2024625829548510967L;
 

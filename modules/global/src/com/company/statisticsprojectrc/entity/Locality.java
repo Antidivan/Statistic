@@ -9,13 +9,13 @@ import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
 @NamePattern("%s %s|town,country")
-@Table(name = "STATISTICSPROJECTRC_TOWNS")
-@Entity(name = "statisticsprojectrc_TOWNS")
+@Table(name = "STATISTICSPROJECTRC_LOCALITY")
+@Entity(name = "statisticsprojectrc_LOCALITY")
 public class Locality extends StandardEntity {
     private static final long serialVersionUID = 8193271901033764487L;
 
     @NotNull
-    @Column(name = "locality", nullable = false)
+    @Column(name = "LOCALITY", nullable = false)
     protected String town;
 
     @Column(name = "COUNTRY")

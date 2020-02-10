@@ -8,8 +8,8 @@ import com.haulmont.cuba.core.entity.annotation.LookupType;
 import javax.persistence.*;
 
 @NamePattern("%s %s %s|last_name,first_name,patronymic")
-@Table(name = "STATISTICSPROJECTRC_CUSTOMERS")
-@Entity(name = "statisticsprojectrc_Customers")
+@Table(name = "STATISTICSPROJECTRC_CUSTOMER")
+@Entity(name = "statisticsprojectrc_Customer")
 public class Customer extends StandardEntity {
     private static final long serialVersionUID = 8796328327481488057L;
 

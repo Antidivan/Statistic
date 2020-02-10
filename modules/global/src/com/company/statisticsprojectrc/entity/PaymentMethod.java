@@ -7,8 +7,8 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
-@Table(name = "STATISTICSPROJECTRC_PAYMENT_METHODS")
-@Entity(name = "statisticsprojectrc_PaymentMethods")
+@Table(name = "STATISTICSPROJECTRC_PAYMENT_METHOD")
+@Entity(name = "statisticsprojectrc_PaymentMethod")
 public class PaymentMethod extends StandardEntity {
     private static final long serialVersionUID = 1227380538908402600L;
 

@@ -10,8 +10,8 @@ import javax.validation.constraints.Positive;
 import javax.validation.constraints.PositiveOrZero;
 import java.util.Date;
 
-@Table(name = "STATISTICSPROJECTRC_ORDERS")
-@Entity(name = "statisticsprojectrc_ORDERS")
+@Table(name = "STATISTICSPROJECTRC_ORDER")
+@Entity(name = "statisticsprojectrc_ORDER")
 public class Order extends StandardEntity {
     private static final long serialVersionUID = 8841246679704730837L;
 
@@ -78,7 +78,7 @@ public class Order extends StandardEntity {
 
     @NotNull
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name = "customer_ID")
+    @JoinColumn(name = "CUSTOMER_ID")
     protected Customer customer;
 
     @Temporal(TemporalType.DATE)
@@ -88,7 +88,7 @@ public class Order extends StandardEntity {
     @Lookup(type = LookupType.DROPDOWN, actions = {"lookup"})
     @NotNull
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name = "TOWN_ID")
+    @JoinColumn(name = "LOCALITY_ID")
     protected Locality townOrder;
 
     public Section getSection() {

@@ -7,8 +7,8 @@ import com.haulmont.cuba.core.entity.annotation.LookupType;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 
-@Table(name = "STATISTICSPROJECTRC_FORM_DURATION_COST")
-@Entity(name = "statisticsprojectrc_Form_Duration_Cost")
+@Table(name = "STATISTICSPROJECTRC_PRODUCT")
+@Entity(name = "statisticsprojectrc_PRODUCT")
 public class Product extends StandardEntity {
     private static final long serialVersionUID = 7212756569611560698L;
 

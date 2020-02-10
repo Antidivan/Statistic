@@ -7,8 +7,8 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
-@Table(name = "STATISTICSPROJECTRC_PROJECTS")
-@Entity(name = "statisticsprojectrc_Projects")
+@Table(name = "STATISTICSPROJECTRC_PROJECT")
+@Entity(name = "statisticsprojectrc_Project")
 public class Project extends StandardEntity {
     private static final long serialVersionUID = 6295772187401026039L;
 

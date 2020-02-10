@@ -8,8 +8,8 @@ import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Positive;
 
-@Table(name = "STATISTICSPROJECTRC_COSTS")
-@Entity(name = "statisticsprojectrc_Costs")
+@Table(name = "STATISTICSPROJECTRC_COST")
+@Entity(name = "statisticsprojectrc_Cost")
 public class Cost extends StandardEntity {
     private static final long serialVersionUID = 4400988563429904261L;
 

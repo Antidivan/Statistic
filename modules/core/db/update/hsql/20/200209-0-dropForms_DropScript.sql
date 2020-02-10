@@ -1,1 +1,0 @@
-drop table STATISTICSPROJECTRC_FORMS__U76610 if exists cascade;

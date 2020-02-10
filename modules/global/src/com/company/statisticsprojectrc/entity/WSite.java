@@ -10,8 +10,8 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 
 @NamePattern("%s|siteName")
-@Table(name = "STATISTICSPROJECTRC_SITES")
-@Entity(name = "statisticsprojectrc_Sites")
+@Table(name = "STATISTICSPROJECTRC_WSITE")
+@Entity(name = "statisticsprojectrc_WSite")
 public class WSite extends StandardEntity {
     private static final long serialVersionUID = -6633490290721750512L;
 

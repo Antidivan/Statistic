@@ -9,8 +9,8 @@ import javax.validation.constraints.Past;
 import javax.validation.constraints.PositiveOrZero;
 import java.util.Date;
 
-@Table(name = "STATISTICSPROJECTRC_USERS")
-@Entity(name = "statisticsprojectrc_USERS")
+@Table(name = "STATISTICSPROJECTRC_USER")
+@Entity(name = "statisticsprojectrc_USER")
 public class User extends StandardEntity {
     private static final long serialVersionUID = -1270483272467825534L;
 
@@ -33,8 +33,7 @@ public class User extends StandardEntity {
     protected Date birthday;
 
     @Temporal(TemporalType.DATE)
-    @Past
-    @Column(name = "first_meeting")
+    @Column(name = "FIRST_MEETING")
     protected Date first_meeting;
 
     public Date getFirst_meeting() {

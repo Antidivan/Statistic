@@ -1,0 +1,1 @@
+drop table STATISTICSPROJECTRC_USERS__U88235 if exists cascade ;

@@ -8,8 +8,8 @@ import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
 
-@Table(name = "STATISTICSPROJECTRC_CONSULTANTS")
-@Entity(name = "statisticsprojectrc_Consultants")
+@Table(name = "STATISTICSPROJECTRC_CONSULTANT")
+@Entity(name = "statisticsprojectrc_Consultant")
 public class Consultant extends StandardEntity {
     private static final long serialVersionUID = -3996728477146518417L;
 

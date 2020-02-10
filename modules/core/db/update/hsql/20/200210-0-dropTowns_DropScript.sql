@@ -1,0 +1,1 @@
+drop table STATISTICSPROJECTRC_TOWNS__U67000 if exists cascade ;
