@@ -10,7 +10,7 @@ import javax.persistence.*;
 @NamePattern("%s %s %s|last_name,first_name,patronymic")
 @Table(name = "STATISTICSPROJECTRC_CUSTOMERS")
 @Entity(name = "statisticsprojectrc_Customers")
-public class Customers extends StandardEntity {
+public class Customer extends StandardEntity {
     private static final long serialVersionUID = 8796328327481488057L;
 
     @Column(name = "SURNAME", length = 63)
@@ -30,13 +30,13 @@ public class Customers extends StandardEntity {
     @Lookup(type = LookupType.DROPDOWN, actions = {"lookup"})
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "USER_ID")
-    protected Users user;
+    protected User user;
 
-    public Users getUser() {
+    public User getUser() {
         return user;
     }
 
-    public void setUser(Users user) {
+    public void setUser(User user) {
         this.user = user;
     }
 

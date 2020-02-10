@@ -11,7 +11,7 @@ import java.util.Date;
 
 @Table(name = "STATISTICSPROJECTRC_USERS")
 @Entity(name = "statisticsprojectrc_USERS")
-public class Users extends StandardEntity {
+public class User extends StandardEntity {
     private static final long serialVersionUID = -1270483272467825534L;
 
     @NotNull

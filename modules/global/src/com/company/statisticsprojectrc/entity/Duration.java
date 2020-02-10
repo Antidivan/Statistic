@@ -10,7 +10,7 @@ import javax.validation.constraints.Positive;
 
 @Table(name = "STATISTICSPROJECTRC_DURATIONS")
 @Entity(name = "statisticsprojectrc_Durations")
-public class Durations extends StandardEntity {
+public class Duration extends StandardEntity {
     private static final long serialVersionUID = 3498581483024703981L;
 
     @Positive

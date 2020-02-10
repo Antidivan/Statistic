@@ -9,7 +9,7 @@ import java.util.Date;
 
 @Table(name = "STATISTICSPROJECTRC_SECTIONS")
 @Entity(name = "statisticsprojectrc_Sections")
-public class Sections extends StandardEntity {
+public class Section extends StandardEntity {
     private static final long serialVersionUID = -2024625829548510967L;
 
     @NotNull

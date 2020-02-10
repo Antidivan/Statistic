@@ -12,7 +12,7 @@ import javax.validation.constraints.Pattern;
 @NamePattern("%s|siteName")
 @Table(name = "STATISTICSPROJECTRC_SITES")
 @Entity(name = "statisticsprojectrc_Sites")
-public class Sites extends StandardEntity {
+public class WSite extends StandardEntity {
     private static final long serialVersionUID = -6633490290721750512L;
 
     @NotNull

@@ -10,14 +10,14 @@ import javax.validation.constraints.NotNull;
 
 @Table(name = "STATISTICSPROJECTRC_CONSULTANTS")
 @Entity(name = "statisticsprojectrc_Consultants")
-public class Consultants extends StandardEntity {
+public class Consultant extends StandardEntity {
     private static final long serialVersionUID = -3996728477146518417L;
 
     @Lookup(type = LookupType.DROPDOWN, actions = {"lookup"})
     @NotNull
     @OneToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "USER_ID")
-    protected Users user;
+    protected User user;
 
     @NotNull
     @Column(name = "FULL_NAME_CONSULTANT", nullable = false, unique = true)
@@ -44,11 +44,11 @@ public class Consultants extends StandardEntity {
         this.emailWork = emailWork;
     }
 
-    public void setUser(Users user) {
+    public void setUser(User user) {
         this.user = user;
     }
 
-    public Users getUser() {
+    public User getUser() {
         return user;
     }
 

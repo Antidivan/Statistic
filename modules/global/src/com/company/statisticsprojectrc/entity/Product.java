@@ -1,6 +1,5 @@
 package com.company.statisticsprojectrc.entity;
 
-import com.haulmont.chile.core.annotations.NamePattern;
 import com.haulmont.cuba.core.entity.StandardEntity;
 import com.haulmont.cuba.core.entity.annotation.Lookup;
 import com.haulmont.cuba.core.entity.annotation.LookupType;
@@ -8,10 +7,9 @@ import com.haulmont.cuba.core.entity.annotation.LookupType;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 
-@NamePattern("Product")
 @Table(name = "STATISTICSPROJECTRC_FORM_DURATION_COST")
 @Entity(name = "statisticsprojectrc_Form_Duration_Cost")
-public class Form_Duration_Cost extends StandardEntity {
+public class Product extends StandardEntity {
     private static final long serialVersionUID = 7212756569611560698L;
 
     @Lookup(type = LookupType.DROPDOWN, actions = {"lookup"})
@@ -24,13 +22,13 @@ public class Form_Duration_Cost extends StandardEntity {
     @NotNull
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "DURATION_ID")
-    protected Durations duration;
+    protected Duration duration;
 
     @Lookup(type = LookupType.DROPDOWN, actions = {"lookup"})
     @NotNull
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "COST_ID")
-    protected Costs cost;
+    protected Cost cost;
 
     public void setForm(FormService form) {
         this.form = form;
@@ -40,19 +38,19 @@ public class Form_Duration_Cost extends StandardEntity {
         return form;
     }
 
-    public Costs getCost() {
+    public Cost getCost() {
         return cost;
     }
 
-    public void setCost(Costs cost) {
+    public void setCost(Cost cost) {
         this.cost = cost;
     }
 
-    public Durations getDuration() {
+    public Duration getDuration() {
         return duration;
     }
 
-    public void setDuration(Durations duration) {
+    public void setDuration(Duration duration) {
         this.duration = duration;
     }
 

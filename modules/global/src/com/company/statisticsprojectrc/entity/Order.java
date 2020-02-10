@@ -12,14 +12,14 @@ import java.util.Date;
 
 @Table(name = "STATISTICSPROJECTRC_ORDERS")
 @Entity(name = "statisticsprojectrc_ORDERS")
-public class Orders extends StandardEntity {
+public class Order extends StandardEntity {
     private static final long serialVersionUID = 8841246679704730837L;
 
     @Lookup(type = LookupType.DROPDOWN, actions = {"lookup"})
     @NotNull
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "SITE_ORDER_ID")
-    protected Sites siteOrder;
+    protected WSite siteOrder;
 
     @NotNull
     @Column(name = "NUMBER_ORDER", nullable = false)
@@ -38,7 +38,7 @@ public class Orders extends StandardEntity {
     @NotNull
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "PAYMENT_METHOD_ID")
-    protected PaymentMethods paymentMethod;
+    protected PaymentMethod paymentMethod;
 
     @PositiveOrZero
     @NotNull
@@ -62,24 +62,24 @@ public class Orders extends StandardEntity {
     @NotNull
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "SECTION_ID")
-    protected Sections section;
+    protected Section section;
 
     @Lookup(type = LookupType.DROPDOWN, actions = {"lookup"})
     @NotNull
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "PRODUCT_ID")
-    protected Form_Duration_Cost product;
+    protected Product product;
 
     @Lookup(type = LookupType.DROPDOWN)
     @NotNull
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "CONSULTANT_ID")
-    protected Consultants consultant;
+    protected Consultant consultant;
 
     @NotNull
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "customer_ID")
-    protected Customers customer;
+    protected Customer customer;
 
     @Temporal(TemporalType.DATE)
     @Column(name = "DATE_ESTIMATED")
@@ -91,27 +91,27 @@ public class Orders extends StandardEntity {
     @JoinColumn(name = "TOWN_ID")
     protected Locality townOrder;
 
-    public Sections getSection() {
+    public Section getSection() {
         return section;
     }
 
-    public void setSection(Sections section) {
+    public void setSection(Section section) {
         this.section = section;
     }
 
-    public void setProduct(Form_Duration_Cost product) {
+    public void setProduct(Product product) {
         this.product = product;
     }
 
-    public Form_Duration_Cost getProduct() {
+    public Product getProduct() {
         return product;
     }
 
-    public void setConsultant(Consultants consultant) {
+    public void setConsultant(Consultant consultant) {
         this.consultant = consultant;
     }
 
-    public Consultants getConsultant() {
+    public Consultant getConsultant() {
         return consultant;
     }
 
@@ -131,11 +131,11 @@ public class Orders extends StandardEntity {
         return numberOrder;
     }
 
-    public void setCustomer(Customers customer) {
+    public void setCustomer(Customer customer) {
         this.customer = customer;
     }
 
-    public Customers getCustomer() {
+    public Customer getCustomer() {
         return customer;
     }
 
@@ -171,11 +171,11 @@ public class Orders extends StandardEntity {
         this.costFinal = costFinal;
     }
 
-    public PaymentMethods getPaymentMethod() {
+    public PaymentMethod getPaymentMethod() {
         return paymentMethod;
     }
 
-    public void setPaymentMethod(PaymentMethods paymentMethod) {
+    public void setPaymentMethod(PaymentMethod paymentMethod) {
         this.paymentMethod = paymentMethod;
     }
 
@@ -195,11 +195,11 @@ public class Orders extends StandardEntity {
         this.dateCreate = dateCreate;
     }
 
-    public Sites getSiteOrder() {
+    public WSite getSiteOrder() {
         return siteOrder;
     }
 
-    public void setSiteOrder(Sites siteOrder) {
+    public void setSiteOrder(WSite siteOrder) {
         this.siteOrder = siteOrder;
     }
 
